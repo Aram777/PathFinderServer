@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "pathFinderServerRestApi", "pathFinderServerRestApi.njsproj", "{9C3D86D0-21D8-4E83-A23C-48EDF9C320D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C3D86D0-21D8-4E83-A23C-48EDF9C320D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C3D86D0-21D8-4E83-A23C-48EDF9C320D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C3D86D0-21D8-4E83-A23C-48EDF9C320D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C3D86D0-21D8-4E83-A23C-48EDF9C320D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0DCFB28-2543-41D7-BF28-C9E590793363}
+	EndGlobalSection
+EndGlobal
