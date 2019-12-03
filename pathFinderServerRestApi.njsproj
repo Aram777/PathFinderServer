@@ -30,6 +30,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <None Include="pathFinderServerRestApi - Web Deploy.pubxml" />
+    <Content Include="models\buildingtypeDb.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\buildingtypes.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="routes\index.js" />
     <Content Include="routes\users.js" />
     <Content Include="package.json" />
@@ -40,6 +47,7 @@
     <Content Include="views\error.pug" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="models\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
