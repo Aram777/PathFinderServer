@@ -31,13 +31,40 @@
   <ItemGroup>
     <Content Include="app.js" />
     <None Include="pathFinderServerRestApi - Web Deploy.pubxml" />
+    <Content Include="models\buildingstouserDB.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="models\buildingstouserdetailDB.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="models\buildingtypeDb.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="models\materialsDB.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="models\objectsDB.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\javascripts\CalcObjects.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\buildingstouser.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\buildingstouserdetail.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="routes\buildingtypes.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="routes\index.js" />
+    <Content Include="routes\materials.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\objects.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="routes\users.js" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />

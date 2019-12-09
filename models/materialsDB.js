@@ -24,9 +24,9 @@ client.connect();
 //var client = new pg.Client(conStr);
 //client.connect();
 
-var buildingtype =
+var materials =
 {
-    getAllbuildingtype: function (callback) {
+    getAllmaterials: function (callback) {
         //var output = '';
         //var resdb = client.query('select * from buildingtype;', function (err, result) {
         //    for (var i = 0; i < result.rows.length; i++) {
@@ -34,38 +34,38 @@ var buildingtype =
         //        output += '<tr><td>' + row['id'] + '</td><td>' + row['name'] + '</td><td>' + row['number'] + '</td></tr>';
         //    }
         //});
-
+        
         return client.query(
-            'select * from buildingtype;', callback);
+            'select * from materials;', callback);
     }
     ,
-    getAllbuildingtypeByid: function (buildingtypeid, callback) {
-        var queryString = 'select * from buildingtype where buildingtypeid=' + buildingtypeid+';';
+    getmaterilasByid: function (materialsid, callback) {
+        var queryString = 'select * from materials where materialsid=' + materialsid + ';';
         console.log(queryString);
         return client.query(queryString, callback);
     }
     ,
-    addbuildingtype: function (buildingtype, callback) {
-        var queryString = "insert into buildingtype (typename, formula  )  values( " +
-            "'" + buildingtype.typename + "'," +
-            "'" + buildingtype.formula + "');";
+    addmaterials: function (materials, callback) {
+        var queryString = "insert into materials (materialname, coefficient  )  values( " +
+            "'" + materials.materialname + "'," +
+            materials.coefficient + ");";
         console.log(queryString);
         return client.query(
             queryString,
             callback
         );
     },
-    deletebuildingtype: function (buildingtypeid, callback) {
-        var queryString = "delete from buildingtype where buildingtypeid= " + buildingtypeid;
+    deletematerials: function (materialsid, callback) {
+        var queryString = "delete from materials where materialsid= " + materialsid;
 
         return client.query(queryString, callback);
     },
-    updatebuildingtype: function (buildingtypeid, buildingtype, callback) {
+    updatematerials: function (materialsid, materials, callback) {
 
-        var queryString = "update buildingtype set " +
-            "typename='" + buildingtype.typename + "'" +
-            ",formula='" + buildingtype.formula + "'" +
-            " where buildingtypeid=" + buildingtypeid + ";";
+        var queryString = "update materials set " +
+            "materialname='" + materials.materialname + "'" +
+            ",coefficient=" + materials.coefficient + 
+            " where materialsid=" + materialsid + ";";
         console.log(queryString);
 
         return client.query(
@@ -75,4 +75,4 @@ var buildingtype =
         );
     }
 };
-module.exports = buildingtype;
+module.exports = materials;
