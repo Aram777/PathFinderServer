@@ -41,7 +41,9 @@ var buildingstouserdetail =
     }
     ,
     getobjectsFormula: function (buildingstouserid, callback) {
-        var queryString = 'Select obj.abbreviation, obj.formula, bdts.buildingstouserdetailid as bdsid from buildingstouserdetail bdts inner join objects obj '+
+        var queryString = 'Select obj.abbreviation, obj.formula, bdts.buildingstouserdetailid as bdsid ,bdts.presentvalue, bdts.newvalue '+
+        ' from buildingstouserdetail bdts inner join objects obj ' +
+
         'on obj.objectsid = bdts.objectsid '+
             'where bdts.buildingstouserid = ' + buildingstouserid + '  order by bdts.buildingstouserdetailid;';
         return client.query(
