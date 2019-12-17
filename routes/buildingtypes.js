@@ -11,6 +11,12 @@ router.get('/', function (req, res, next) {
         if (err) {
             res.json(err);
         } else {
+          
+             //res.json({
+             //    status: 'success',
+             //    message: "https:\/\/images.dog.ceo\/breeds\/labrador\/n02099712_5261.jpg"
+             //});
+
             res.json(rows.rows);
         }
     });
